@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Chill Brew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="home.html" class="logo">Chill Brew ☕</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Kami sangat senang mendengar dari Anda.</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3>📍 Lokasi</h3>
+                    <p>Jl. Kopi Santai No. 88<br>Jakarta Selatan, Indonesia</p>
+                </div>
+                <div class="info-card">
+                    <h3>⏰ Jam Buka</h3>
+                    <p>Senin - Jumat: 08:00 - 22:00<br>Sabtu - Minggu: 09:00 - 23:00</p>
+                </div>
+                <div class="info-card">
+                    <h3>📞 Kontak</h3>
+                    <p>+62 812 3456 7890<br>hello@chillbrew.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">FB</a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Nama</label>
+                        <input type="text" class="form-input" placeholder="Nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" placeholder="email@contoh.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Pesan</label>
+                        <textarea class="form-input" rows="5" placeholder="Pesan Anda..."></textarea>
+                    </div>
+                    <button type="button" class="btn-login">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div class="floating-cart-btn" id="cartBtn">
+        🛒
+        <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartModal">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2>Pesanan Anda</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItemsContainer">
+                <div class="empty-cart-msg">Belum ada menu yang dipilih.</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotalValue">Rp 0</span>
+                </div>
+                <button class="btn-checkout" id="btnCheckout">Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

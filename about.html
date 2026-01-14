@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Chill Brew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="home.html" class="logo">Chill Brew ☕</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html" class="active">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Tentang Kami</h1>
+            <p>Lebih dari sekadar kopi, ini tentang cerita.</p>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Chill Brew Story</h2>
+                <p>
+                    Chill Brew lahir dari keinginan sederhana: menciptakan ruang di mana waktu terasa melambat.
+                    Di tengah hiruk-pikuk kota, kami ingin menjadi tempat pelarian yang nyaman—baik untuk Anda yang
+                    ingin
+                    fokus bekerja, berdiskusi santai dengan teman, atau sekadar menikmati kesendirian ditemani secangkir
+                    kopi hangat.
+                </p>
+                <p>
+                    Kami percaya bahwa rasa kopi yang berkualitas harus dinikmati dalam suasana yang mendukung.
+                    Setiap biji kopi kami dipilih dengan teliti, diseduh dengan hati, dan disajikan dengan senyuman.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2020</span>
+                        <span class="stat-label">Didirikan</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Varian Kopi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Kenyamanan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">☕ Chill Vibes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team / Vibe Section -->
+    <section class="vibe-section">
+        <div class="container">
+            <h2>Our Vibe</h2>
+            <div class="vibe-grid">
+                <div class="vibe-card">Relax</div>
+                <div class="vibe-card">Focus</div>
+                <div class="vibe-card">Connect</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div class="floating-cart-btn" id="cartBtn">
+        🛒
+        <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartModal">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2>Pesanan Anda</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItemsContainer">
+                <div class="empty-cart-msg">Belum ada menu yang dipilih.</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotalValue">Rp 0</span>
+                </div>
+                <button class="btn-checkout" id="btnCheckout">Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
