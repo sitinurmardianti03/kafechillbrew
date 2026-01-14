@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Chill Brew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="home.html" class="logo">Chill Brew ☕</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Pilihan terbaik untuk menemani harimu.</p>
+        </div>
+    </header>
+
+    <!-- Menu Content -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Filter / Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active">All</button>
+                <button class="category-btn">Coffee</button>
+                <button class="category-btn">Non-Coffee</button>
+                <button class="category-btn">Snack</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Coffee List -->
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/caffe-latte.jpg" alt="Caffe Latte" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Caffe Latte</h3>
+                        <p class="description">Espresso with steamed milk and a thin layer of foam.</p>
+                        <span class="price">Rp 28.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/americano.jpg" alt="Americano" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Americano</h3>
+                        <p class="description">Espresso with hot water. Bold and rich.</p>
+                        <span class="price">Rp 22.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/caffe-mocha.jpg" alt="Caffe Mocha" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Caffe Mocha</h3>
+                        <p class="description">A delicious blend of espresso, steamed milk, and chocolate.</p>
+                        <span class="price">Rp 30.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/cappuccino.jpg" alt="Cappuccino" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cappuccino</h3>
+                        <p class="description">Espresso, steamed milk, and a deep layer of foam.</p>
+                        <span class="price">Rp 28.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/caramel-macchiato.jpg" alt="Caramel Macchiato" class="card-image"
+                            loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Caramel Macchiato</h3>
+                        <p class="description">Espresso with vanilla syrup, milk, and caramel drizzle.</p>
+                        <span class="price">Rp 32.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/hazelnut-latte.jpg" alt="Hazelnut Latte" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Hazelnut Latte</h3>
+                        <p class="description">Sweet nutty flavor combined with rich espresso and milk.</p>
+                        <span class="price">Rp 30.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/espresso.jpg" alt="Espresso" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Espresso</h3>
+                        <p class="description">Pure concentrated coffee. Strong and bold.</p>
+                        <span class="price">Rp 18.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/cold-brew.jpg" alt="Cold Brew" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cold Brew</h3>
+                        <p class="description">Slow-steeped cold coffee for a smooth taste.</p>
+                        <span class="price">Rp 25.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Coffee">
+                    <div class="card-image-container">
+                        <img src="images/affogato.jpg" alt="Affogato" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Affogato</h3>
+                        <p class="description">Vanilla ice cream drowned in hot espresso.</p>
+                        <span class="price">Rp 25.000</span>
+                    </div>
+                </div>
+
+                <!-- Non-Coffee List -->
+                <div class="menu-card" data-category="Non-Coffee">
+                    <div class="card-image-container">
+                        <img src="images/matcha-latte.jpg" alt="Matcha Latte" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Matcha Latte</h3>
+                        <p class="description">Premium Japanese matcha with steamed milk.</p>
+                        <span class="price">Rp 30.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Non-Coffee">
+                    <div class="card-image-container">
+                        <img src="images/chocolate-signature.jpg" alt="Chocolate Signature" class="card-image"
+                            loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Chocolate Signature</h3>
+                        <p class="description">Rich dark chocolate with creamy milk.</p>
+                        <span class="price">Rp 28.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Non-Coffee">
+                    <div class="card-image-container">
+                        <img src="images/red-velvet-latte.jpg" alt="Red Velvet Latte" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Red Velvet Latte</h3>
+                        <p class="description">Sweet and creamy red velvet taste with milk.</p>
+                        <span class="price">Rp 30.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Non-Coffee">
+                    <div class="card-image-container">
+                        <img src="images/taro-latte.jpg" alt="Taro Latte" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Taro Latte</h3>
+                        <p class="description">Sweet and creamy purple yam flavor.</p>
+                        <span class="price">Rp 28.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Non-Coffee">
+                    <div class="card-image-container">
+                        <img src="images/lychee-tea.jpg" alt="Lychee Tea" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lychee Tea</h3>
+                        <p class="description">Refreshing iced tea with lychee fruit.</p>
+                        <span class="price">Rp 25.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Non-Coffee">
+                    <div class="card-image-container">
+                        <img src="images/lemon-tea.jpg" alt="Lemon Tea" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lemon Tea</h3>
+                        <p class="description">Fresh brewed tea with a zesty lemon kick.</p>
+                        <span class="price">Rp 20.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Non-Coffee">
+                    <div class="card-image-container">
+                        <img src="images/strawberry-smoothie.jpg" alt="Strawberry Smoothie" class="card-image"
+                            loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Strawberry Smoothie</h3>
+                        <p class="description">Fresh blended strawberries with yogurt.</p>
+                        <span class="price">Rp 32.000</span>
+                    </div>
+                </div>
+
+                <!-- Snack List -->
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/butter-croissant.jpg" alt="Butter Croissant" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Butter Croissant</h3>
+                        <p class="description">Flaky, buttery, and freshly baked.</p>
+                        <span class="price">Rp 18.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/mix-platter.jpg" alt="Mix Platter" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mix Platter</h3>
+                        <p class="description">French fries, sausage, and nuggets.</p>
+                        <span class="price">Rp 35.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/french-fries.jpg" alt="French Fries" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>French Fries</h3>
+                        <p class="description">Classic crispy salted fries.</p>
+                        <span class="price">Rp 20.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/churros.jpg" alt="Churros" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Churros</h3>
+                        <p class="description">Fried dough pastry with cinnamon sugar and dip.</p>
+                        <span class="price">Rp 25.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" class="card-image"
+                            loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p class="description">Creamy pasta with smoked beef and cheese.</p>
+                        <span class="price">Rp 40.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/club-sandwich.jpg" alt="Club Sandwich" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Club Sandwich</h3>
+                        <p class="description">Toast with chicken, lettuce, tomato, and cheese.</p>
+                        <span class="price">Rp 32.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/classic-beef-burger.jpg" alt="Classic Beef Burger" class="card-image"
+                            loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Classic Beef Burger</h3>
+                        <p class="description">Juicy beef patty with fresh veggies.</p>
+                        <span class="price">Rp 45.000</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="Snack">
+                    <div class="card-image-container">
+                        <img src="images/onion-rings.jpg" alt="Onion Rings" class="card-image" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Onion Rings</h3>
+                        <p class="description">Crispy fried onion rings with dipping sauce.</p>
+                        <span class="price">Rp 22.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart -->
+    <div class="floating-cart-btn" id="cartBtn">
+        🛒
+        <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cartModal">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2>Pesanan Anda</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItemsContainer">
+                <div class="empty-cart-msg">Belum ada menu yang dipilih.</div>
+            </div>
+
+            <!-- Payment Inline -->
+            <div class="cart-payment-section">
+                <h3>Pilih Pembayaran</h3>
+                <div class="payment-methods inline">
+                    <div class="payment-method" data-method="QRIS">
+                        <span class="payment-icon">📱</span>
+                        <span class="payment-name">QRIS</span>
+                    </div>
+                    <div class="payment-method" data-method="Tunai">
+                        <span class="payment-icon">💵</span>
+                        <span class="payment-name">Tunai</span>
+                    </div>
+                    <div class="payment-method" data-method="GoPay">
+                        <span class="payment-icon">🔵</span>
+                        <span class="payment-name">GoPay</span>
+                    </div>
+                    <div class="payment-method" data-method="OVO">
+                        <span class="payment-icon">🟣</span>
+                        <span class="payment-name">OVO</span>
+                    </div>
+                    <div class="payment-method" data-method="Dana">
+                        <span class="payment-icon">🟦</span>
+                        <span class="payment-name">Dana</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotalValue">Rp 0</span>
+                </div>
+                <button class="btn-checkout" id="btnCheckout">Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
